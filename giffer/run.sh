@@ -6,4 +6,4 @@ for filename in ./clips/*.mp4; do
 	#echo $(basename $filename)
 done
 
-mv ./clips/* ./junkyard
+mv ./clips/* ./junkyard/src
