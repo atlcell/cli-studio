@@ -1,15 +1,17 @@
 # Studio
 
-A suite of scripts to assist in the production of media from video files - `.mp4` files are the standard format the suite is compatible with.
+suite of scripts and configs for media production including
 
-Tools are basic shell scripts that invoke `ffmpeg`. UI tools may or may not be availible.
+- CLI wrapper scripts for `ffmpeg`
+- Curves, Brushes, Patterns, etc for Adobe Creative Suite
 
-## Tools
+## clipper `video-clipper`
+Clipper is a script for `ffmpeg` that create clips from `.mp4` files. Usage is as follows
 
-### Giffer
+`./clipper.sh INPUT TIME CLIP_LENGTH FILTER(optional) OUTPUT.path`
 
-Giffer is a script that covnerts mp4 clips to gifs
+`./clipper.sh "~/YouTube.mp4" "07:40" 6.5 "-filter:v crop=480:250:0:0" ~/Desktop/Soulja-Boy.mp4`
 
-### Clipper
+## giffer `video-giffer`
+Giffer is a batch script that will create `.gif` or `.webm` files from the input directory
 
-Clipper is a script that creates an X second clip from a particular start-point
