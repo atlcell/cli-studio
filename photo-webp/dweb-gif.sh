@@ -1,0 +1,1 @@
+find . -name "*.webp" | xargs -I {} dwebp {} -o {}.gif
