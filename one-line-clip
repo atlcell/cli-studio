@@ -1,0 +1,2 @@
+URL=$(youtube-dl --get-url $1)
+ffmpeg -ss $2 -i "${URL}" -t $3 test.mp4
